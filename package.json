@@ -4,17 +4,32 @@
   "description": "source code of ts-learning",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangtongmeng/typescript-learn.git"
   },
-  "keywords": ["typescript"],
+  "keywords": [
+    "typescript"
+  ],
   "author": "wangtongmeng<tongmengwang@163.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wangtongmeng/typescript-learn/issues"
   },
-  "homepage": "https://github.com/wangtongmeng/typescript-learn#readme"
+  "homepage": "https://github.com/wangtongmeng/typescript-learn#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.2.0",
+    "ts-loader": "^7.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
 }
