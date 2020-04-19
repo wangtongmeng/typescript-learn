@@ -1,2 +1,1 @@
-let num:number = 123
-document.title = 'wtm'
+import './example/basic-type'
